@@ -2,4 +2,5 @@
 
 ## Table of Contents
 [Reverse Array](./challenges/arrayReverse/array-reverse.js)
-[Shift Array](./challenges/array-shift/array.shift.js)
+[Shift Array](./challenges/array-shift/array-shift.js)
+[Array Binary Search](./challenges/arrayBinarySearch/array-binary-search.js)
