@@ -15,4 +15,7 @@ describe('Linked List', () => {
   it('.includes returns false if the linked list doesn\'t have a value', () => {
     expect(linkedList.includes(4)).toBe(false);
   });
+  it('toString returns a string of all the values in the linked list', () => {
+    expect(linkedList.toString()).toBe('1, 2, 3');
+  })
 });

@@ -27,17 +27,12 @@ class LinkedList {
   }
   toString() {
     let current = this.head;
-    let result = ''
+    let result = []
     while(current) {
-      console.log(current);
-      if (current.value === value) {
-        return true;
-      } else {
-        current = current.next;
-      }
+      result.push(current.value);
+      current = current.next;
     }
-    return result;
-  }
+    return result.join(', ');
   }
 }
 
