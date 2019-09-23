@@ -1,4 +1,4 @@
-const { Node, LinkedList } = require('../challenges/linkedList/linked-list');
+const { LinkedList } = require('../challenges/linkedList/linked-list');
 
 describe('Linked List', () => {
   const linkedList = new LinkedList();
@@ -17,5 +17,5 @@ describe('Linked List', () => {
   });
   it('toString returns a string of all the values in the linked list', () => {
     expect(linkedList.toString()).toBe('1, 2, 3');
-  })
+  });
 });

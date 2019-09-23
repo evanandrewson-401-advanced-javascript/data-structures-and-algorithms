@@ -27,7 +27,7 @@ class LinkedList {
   }
   toString() {
     let current = this.head;
-    let result = []
+    let result = [];
     while(current) {
       result.push(current.value);
       current = current.next;
