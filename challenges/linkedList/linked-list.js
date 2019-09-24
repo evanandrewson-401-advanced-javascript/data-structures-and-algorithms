@@ -34,6 +34,15 @@ class LinkedList {
     }
     return result.join(', ');
   }
+  append(value) {
+    const newNode = new Node(value, null);
+    let tail = this.head;
+    while(tail.next !== null) {
+      tail = tail.next;
+    }
+    tail.next = newNode;
+    return this.head; 
+  }
 }
 
 module.exports = { Node, LinkedList };

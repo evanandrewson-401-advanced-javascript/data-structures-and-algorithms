@@ -18,4 +18,8 @@ describe('Linked List', () => {
   it('toString returns a string of all the values in the linked list', () => {
     expect(linkedList.toString()).toBe('1, 2, 3');
   });
+  it('append adds node to end of list', () => {
+    linkedList.append(5);
+    expect(linkedList.head).toEqual({'value': 1, 'next': {'value': 2, 'next': {'value': 3, 'next': {'value': 5, 'next': null }}}});
+  });
 });
