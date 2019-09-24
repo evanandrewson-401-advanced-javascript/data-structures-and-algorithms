@@ -45,4 +45,12 @@ describe('Linked List', () => {
     linkedList.insertBefore(2, 5);
     expect(linkedList.head).toEqual({'value': 1, 'next': {'value': 5, 'next': {'value': 2, 'next': {'value': 3, 'next': null }}}});
   });
+  it('insertAfter adds node after a value', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    linkedList.insertAfter(1, 5);
+    expect(linkedList.head).toEqual({'value': 1, 'next': {'value': 5, 'next': {'value': 2, 'next': {'value': 3, 'next': null }}}});
+  });
 });

@@ -1,5 +1,5 @@
 # Reverse an Array
-Coding challenge #4
+Coding challenge #4 and #5
 
 ## Challenge
 The challenge is to create a linked list with methods to add a node to the beginning, check if a value is in the list, and return all the values in the list as a string.
