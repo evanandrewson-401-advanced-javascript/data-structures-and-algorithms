@@ -64,6 +64,23 @@ class LinkedList {
     current.next = newNode;
     return this.head;
   }
+  valueAtEndMinusK(k) {
+    let tail = this.head;
+    let length = 1;
+    let current = this.head;
+    while(tail.next !== null) {
+      tail = tail.next;
+      length++;
+    }
+    if(k < 0 || k >= length) {
+      throw new Error('k cannot be less than 0 or greater than or equal to the length of the list');
+    } else {
+      for(let i = 0; i< length - k - 1; i++) {
+        current = current.next;
+      }
+    }
+    return current.value;
+  }
 }
 
 module.exports = { Node, LinkedList };
