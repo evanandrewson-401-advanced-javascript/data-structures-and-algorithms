@@ -53,4 +53,43 @@ describe('Linked List', () => {
     linkedList.insertAfter(1, 5);
     expect(linkedList.head).toEqual({'value': 1, 'next': {'value': 5, 'next': {'value': 2, 'next': {'value': 3, 'next': null }}}});
   });
+  it('valueAtEndMinusK where k is greater than the length of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    expect(() => {
+      linkedList.valueAtEndMinusK(5);
+    }).toThrow();
+  });
+  it('valueAtEndMinusK where k and the length of the list are the same', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    expect(() => {
+      linkedList.valueAtEndMinusK(3);
+    }).toThrow();
+  });
+  it('valueAtEndMinusK where k is not a positive integer', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    expect(() => {
+      linkedList.valueAtEndMinusK(-3);
+    }).toThrow();
+  });
+  it('valueAtEndMinusK where the linked list is of a size 1', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(1);
+    expect(linkedList.valueAtEndMinusK(0)).toBe(1);
+  });
+  it('valueAtEndMinusK where k is somewhere in the middle of the linked list', () => {
+    const linkedList = new LinkedList();
+    linkedList.insert(3);
+    linkedList.insert(2);
+    linkedList.insert(1);
+    expect(linkedList.valueAtEndMinusK(2)).toBe(1);
+  });
 });
