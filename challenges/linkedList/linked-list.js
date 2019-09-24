@@ -43,6 +43,17 @@ class LinkedList {
     tail.next = newNode;
     return this.head; 
   }
+  insertBefore(value, newVal) {
+    let current = this.head;
+    let previous;
+    while(current.value !== value) {
+      previous = current;
+      current = current.next;
+    }
+    const newNode = new Node(newVal, current);
+    previous.next = newNode;
+    return this.head;
+  }
 }
 
 module.exports = { Node, LinkedList };
