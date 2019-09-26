@@ -37,10 +37,14 @@ class LinkedList {
   append(value) {
     const newNode = new Node(value, null);
     let tail = this.head;
-    while(tail.next !== null) {
-      tail = tail.next;
+    if(!this.head) {
+      this.head = newNode;
+    } else {
+      while(tail.next !== null) {
+        tail = tail.next;
+      }
+      tail.next = newNode;
     }
-    tail.next = newNode;
     return this.head; 
   }
   insertBefore(value, newVal) {
