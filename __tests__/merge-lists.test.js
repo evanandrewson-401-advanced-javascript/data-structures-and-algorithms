@@ -1,4 +1,4 @@
-const { Node, LinkedList } = require('../challenges/linkedList/linked-list');
+const { LinkedList } = require('../challenges/linkedList/linked-list');
 const mergeLists = require('../challenges/llMerge/ll-merge');
 
 describe('linked list merge', () => {
