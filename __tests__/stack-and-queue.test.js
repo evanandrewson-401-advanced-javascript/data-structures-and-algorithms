@@ -31,5 +31,9 @@ describe('stacks and queues', () => {
     const stack = new Stack();
     stack.push(1);
     expect(stack.peek()).toBe(1);
-  })
+  });
+  it('instantiates an empty stack', () => {
+    const stack = new Stack();
+    expect(stack.top).toBeNull();
+  });
 });
