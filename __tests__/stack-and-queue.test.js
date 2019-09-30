@@ -63,4 +63,9 @@ describe('stacks and queues', () => {
     queue.dequeue();
     expect(queue.front).toBeNull();
   });
+  it('peek returns the value at the front of the queue', () => {
+    const queue = new Queue();
+    queue.enqueue(1);
+    expect(queue.peek()).toBe(1);
+  });
 });

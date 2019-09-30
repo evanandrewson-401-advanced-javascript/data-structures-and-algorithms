@@ -59,6 +59,9 @@ class Queue {
     }
     return result;
   }
+  peek() {
+    return this.front.value;
+  }
 }
 
 module.exports = { Stack, Queue };
