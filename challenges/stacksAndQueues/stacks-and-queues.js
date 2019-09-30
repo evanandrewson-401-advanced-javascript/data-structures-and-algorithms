@@ -45,7 +45,20 @@ class Queue {
     }
     return this.front;
   }
-
+  dequeue() {
+    let result;
+    if(this.front.value) {
+      result = this.front.value;
+    } else {
+      result = null;
+    }
+    if(this.front) {
+      this.front = this.front.next;
+    } else {
+      this.front = null;
+    }
+    return result;
+  }
 }
 
 module.exports = { Stack, Queue };

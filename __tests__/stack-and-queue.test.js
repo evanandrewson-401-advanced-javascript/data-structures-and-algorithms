@@ -46,5 +46,21 @@ describe('stacks and queues', () => {
     queue.enqueue(1);
     queue.enqueue(2);
     expect(queue.front).toEqual({ value: 1, next: { value: 2, next: null}});
-  })
+  });
+  it('dequeues the front value', () => {
+    const queue = new Queue();
+    queue.enqueue(1);
+    queue.enqueue(2);
+    const result = queue.dequeue();
+    expect(result).toBe(1);
+    expect(queue.front).toEqual({ value: 2, next: null});
+  });
+  it('dequeues all values to an empty queue', () => {
+    const queue = new Queue();
+    queue.enqueue(1);
+    queue.enqueue(2);
+    queue.dequeue();
+    queue.dequeue();
+    expect(queue.front).toBeNull();
+  });
 });
