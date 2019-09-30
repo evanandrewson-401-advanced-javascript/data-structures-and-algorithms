@@ -27,4 +27,9 @@ describe('stacks and queues', () => {
     stack.pop();
     expect(stack.top).toBeNull();
   });
+  it('peek returns the value of the top of the stack', () => {
+    const stack = new Stack();
+    stack.push(1);
+    expect(stack.peek()).toBe(1);
+  })
 });
