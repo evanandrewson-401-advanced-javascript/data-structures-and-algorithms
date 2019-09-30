@@ -9,6 +9,20 @@ class Stack {
     this.top = newNode;
     return this.top; 
   }
+  pop() {
+    let result;
+    if(this.top.value) {
+      result = this.top.value;
+    } else {
+      result = null;
+    }
+    if(this.top) {
+      this.top = this.top.next;
+    } else {
+      this.top = null;
+    }
+    return result;
+  }
 }
 
 module.exports = Stack;
