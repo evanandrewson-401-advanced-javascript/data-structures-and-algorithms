@@ -1,4 +1,4 @@
-const Stack = require('../challenges/stacksAndQueues/stacks-and-queues');
+const { Stack, Queue } = require('../challenges/stacksAndQueues/stacks-and-queues');
 
 describe('stacks and queues', () => {
   it('pushes a single value to the top of the stack', () => {
@@ -36,4 +36,15 @@ describe('stacks and queues', () => {
     const stack = new Stack();
     expect(stack.top).toBeNull();
   });
+  it('enqueues a single value', () => {
+    const queue = new Queue();
+    queue.enqueue(1);
+    expect(queue.front).toEqual({ value: 1, next: null});
+  });
+  it('enqueues multiple values', () => {
+    const queue = new Queue();
+    queue.enqueue(1);
+    queue.enqueue(2);
+    expect(queue.front).toEqual({ value: 1, next: { value: 2, next: null}});
+  })
 });

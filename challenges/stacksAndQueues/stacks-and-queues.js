@@ -28,4 +28,24 @@ class Stack {
   }
 }
 
-module.exports = Stack;
+class Queue {
+  constructor() {
+    this.front = null;
+  }
+  enqueue(value) {
+    const newNode = new Node(value, null);
+    let tail = this.front;
+    if(!this.front) {
+      this.front = newNode;
+    } else {
+      while(tail.next !== null) {
+        tail = tail.next;
+      }
+      tail.next = newNode;
+    }
+    return this.front;
+  }
+
+}
+
+module.exports = { Stack, Queue };
