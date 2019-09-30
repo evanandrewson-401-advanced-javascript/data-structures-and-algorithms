@@ -6,3 +6,4 @@
 [Array Binary Search](./challenges/arrayBinarySearch/array-binary-search.js)
 [Linked List](./challenges/linkedList/linked-list.js)
 [Merge Linked Lists](./challenge/llMerge/ll-merge.js)
+[Stacks and Queues](./challenge/stacksAndQueues/stacks-and-queues.js)
