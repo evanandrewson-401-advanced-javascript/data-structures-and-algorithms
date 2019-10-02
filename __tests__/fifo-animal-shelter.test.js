@@ -6,7 +6,7 @@ describe('Animal shelter', () => {
     animalShelter.enqueue('dog');
     animalShelter.enqueue('dog');
     animalShelter.enqueue('cat');
-    expect(animalShelter.front).toEqual({ value: 'dog', next: { value: 'dog', next: { value: 'cat', next: null }}})
+    expect(animalShelter.front).toEqual({ value: 'dog', next: { value: 'dog', next: { value: 'cat', next: null }}});
   });
   it('dequeue returns the first animal with the specified value', () => {
     const animalShelter = new AnimalShelter();
