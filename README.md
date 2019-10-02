@@ -7,3 +7,5 @@
 [Linked List](./challenges/linkedList/linked-list.js)
 [Merge Linked Lists](./challenge/llMerge/ll-merge.js)
 [Stacks and Queues](./challenge/stacksAndQueues/stacks-and-queues.js)
+[Queues with Stacks](./challenge/queueWithStacks/queue-with-stacks.js)
+[Animal Shelter](./challenge.fifoAnimalShelter/fifo-animal-shelter.js)
