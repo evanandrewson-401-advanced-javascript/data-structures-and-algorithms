@@ -20,6 +20,9 @@ class PsuedoQueue {
     }
     return this.outStack.top;
   }
+  dequeue() {
+    return this.outStack.pop();
+  }
 }
 
 module.exports = PsuedoQueue;
