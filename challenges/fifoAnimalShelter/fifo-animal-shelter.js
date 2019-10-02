@@ -18,17 +18,18 @@ class AnimalShelter {
     return this.front;
   }
   dequeue(pref) {
+    if(pref !== 'cat' && pref !== 'dog') {
+      return null;
+    }
     let result;
-    if(this.front.value) {
-      result = this.front.value;
-    } else {
-      result = null;
+    let current = this.front;
+    let previous;
+    while(current.value !== pref) {
+      previous = current;
+      current = current.next;
     }
-    if(this.front) {
-      this.front = this.front.next;
-    } else {
-      this.front = null;
-    }
+    result = current.value;
+    previous.next = current.next;
     return result;
   }
 }
