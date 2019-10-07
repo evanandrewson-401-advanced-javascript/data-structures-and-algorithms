@@ -9,10 +9,16 @@ class TreeNode {
 class BinaryTree {
   constructor() {
     this.root = null;
+    this.traversalArray = [];
   }
-  preOrder() {
-    // let result = [];
-
+  preOrder(root) {
+    if(root !==null) {
+      console.log(this.traversalArray);
+      this.traversalArray.push(root.value);
+      this.preOrder(root.left);
+      this.preOrder(root.right);
+    }
+    return this.traversalArray;
   }
 }
 

@@ -20,7 +20,6 @@ module.exports = function multiBracketValidation(str) {
       stack.push(char);
     }
   });
-  console.log(stack.top);
   if(stack.top === null) {
     result = true;
   } else {

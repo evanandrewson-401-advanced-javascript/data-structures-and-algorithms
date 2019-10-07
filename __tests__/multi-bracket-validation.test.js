@@ -12,6 +12,5 @@ describe('multi bracket validation', () => {
   it('returns false for invalid inputs', () => {
     expect(multiBracketValidation('[({}]')).toBeFalsy();
     expect(multiBracketValidation('(](')).toBeFalsy();
-    // expect(multiBracketValidation('{(})')).toBeFalsy();
   });
 });

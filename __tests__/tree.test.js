@@ -12,7 +12,7 @@ describe('Binary Search Tree', () => {
     expect(binarySearchTree.root).toEqual({
       value: 1,
       left: null,
-      right: null
+      right: null,
     });
   });
 
@@ -34,5 +34,13 @@ describe('Binary Search Tree', () => {
         right: null,
       },
     });
+  });
+
+  it('preorder traversal', () => {
+    const binarySearchTree = new BinarySearchTree();
+    binarySearchTree.add(2);
+    binarySearchTree.add(1);
+    binarySearchTree.add(3);
+    expect(binarySearchTree.preOrder(binarySearchTree.root)).toEqual([2, 1, 3]);
   });
 });
