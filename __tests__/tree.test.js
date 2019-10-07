@@ -43,4 +43,12 @@ describe('Binary Search Tree', () => {
     binarySearchTree.add(3);
     expect(binarySearchTree.preOrder(binarySearchTree.root)).toEqual([2, 1, 3]);
   });
+
+  it('inorder traversal', () => {
+    const binarySearchTree = new BinarySearchTree();
+    binarySearchTree.add(2);
+    binarySearchTree.add(1);
+    binarySearchTree.add(3);
+    expect(binarySearchTree.inOrder(binarySearchTree.root)).toEqual([1, 2, 3]);
+  })
 });

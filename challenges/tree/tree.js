@@ -13,10 +13,17 @@ class BinaryTree {
   }
   preOrder(root) {
     if(root !==null) {
-      console.log(this.traversalArray);
       this.traversalArray.push(root.value);
       this.preOrder(root.left);
       this.preOrder(root.right);
+    }
+    return this.traversalArray;
+  }
+  inOrder(root) {
+    if(root !==null) {
+      this.inOrder(root.left);
+      this.traversalArray.push(root.value);
+      this.inOrder(root.right);
     }
     return this.traversalArray;
   }
