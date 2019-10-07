@@ -27,6 +27,14 @@ class BinaryTree {
     }
     return this.traversalArray;
   }
+  postOrder(root) {
+    if(root !==null) {
+      this.postOrder(root.left);
+      this.postOrder(root.right);
+      this.traversalArray.push(root.value);
+    }
+    return this.traversalArray;
+  }
 }
 
 class BinarySearchTree extends BinaryTree {
