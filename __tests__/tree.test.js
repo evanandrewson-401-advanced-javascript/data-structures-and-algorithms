@@ -58,5 +58,5 @@ describe('Binary Search Tree', () => {
     binarySearchTree.add(1);
     binarySearchTree.add(3);
     expect(binarySearchTree.postOrder(binarySearchTree.root)).toEqual([1, 3, 2]);
-  })
+  });
 });
