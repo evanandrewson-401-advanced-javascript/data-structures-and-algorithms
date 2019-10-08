@@ -8,5 +8,6 @@
 [Merge Linked Lists](./challenge/llMerge/ll-merge.js)
 [Stacks and Queues](./challenge/stacksAndQueues/stacks-and-queues.js)
 [Queues with Stacks](./challenge/queueWithStacks/queue-with-stacks.js)
-[Animal Shelter](./challenge.fifoAnimalShelter/fifo-animal-shelter.js)
-[Multi Bracket Validation](./challenge.multiBracketValidation/multi-bracket-validation.js)
+[Animal Shelter](./challenge/fifoAnimalShelter/fifo-animal-shelter.js)
+[Multi Bracket Validation](./challenge/multiBracketValidation/multi-bracket-validation.js)
+[Tree](./challenge/fizzBuzzTree/fizz-buzz-tree.js)
