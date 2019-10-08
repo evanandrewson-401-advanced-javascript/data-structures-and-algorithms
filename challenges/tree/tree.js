@@ -35,7 +35,25 @@ class BinaryTree {
     }
     return this.traversalArray;
   }
-
+  breadthFirst(root) {
+    if(root === null) {
+      return;
+    }
+    const queue = [];
+    queue.push(root);
+    while(queue.length > 0) {
+      const currentNode = queue[0];
+      if(currentNode.left !== null) {
+        queue.push(currentNode.left);
+      }
+      if(currentNode.right !== null) {
+        queue.push(currentNode.right);
+      }
+      this.traversalArray.push(currentNode.value);
+      queue.shift();
+    }
+    return this.traversalArray;
+  }
 }
 
 class BinarySearchTree extends BinaryTree {

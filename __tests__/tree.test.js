@@ -60,11 +60,15 @@ describe('Binary Search Tree', () => {
     expect(binarySearchTree.postOrder(binarySearchTree.root)).toEqual([1, 3, 2]);
   });
 
-  it('preorder traversal', () => {
+  it('breadth first traversal', () => {
     const binarySearchTree = new BinarySearchTree();
-    binarySearchTree.add(2);
-    binarySearchTree.add(1);
+    binarySearchTree.add(5);
+    binarySearchTree.add(4);
+    binarySearchTree.add(6);
     binarySearchTree.add(3);
-    expect(binarySearchTree.preOrder(binarySearchTree.root)).toEqual([2, 1, 3]);
+    binarySearchTree.add(2);
+    binarySearchTree.add(7);
+    binarySearchTree.add(8);
+    expect(binarySearchTree.breadthFirst(binarySearchTree.root)).toEqual([5, 4, 6, 3, 7, 2, 8]);
   });
 });
