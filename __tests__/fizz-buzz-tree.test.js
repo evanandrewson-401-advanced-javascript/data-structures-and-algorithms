@@ -6,23 +6,18 @@ describe('FizzBuzzTree', () => {
   binarySearchTree.add(5);
   binarySearchTree.add(3);
   binarySearchTree.add(15);
-  binarySearchTree.add(4);
   it('replaces values divisible with 3 with fizz, values divisible by 5 with buzz, and values divisible by both with FizzBuzz', () => {
-    expect(binarySearchTree.fizzBuzzTree().root).toEqual({
+    expect(fizzBuzzTree(binarySearchTree.root)).toEqual({
       value: 'Buzz',
       left: {
         value: 'Fizz',
         left: null,
-        right: {
-          value: 4,
-          left: null,
-          right: null
-        }
+        right: null,
       },
       right: {
         value: 'FizzBuzz',
         left: null,
-        right: null
+        right: null,
       },
     });
   });
