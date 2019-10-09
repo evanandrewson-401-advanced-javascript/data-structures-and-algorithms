@@ -82,5 +82,5 @@ describe('Binary Search Tree', () => {
     binarySearchTree.add(7);
     binarySearchTree.add(8);
     expect(binarySearchTree.findMaximumValue(binarySearchTree.root, 0)).toBe(8);
-  })
+  });
 });
