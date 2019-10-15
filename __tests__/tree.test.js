@@ -71,4 +71,16 @@ describe('Binary Search Tree', () => {
     binarySearchTree.add(8);
     expect(binarySearchTree.breadthFirst(binarySearchTree.root)).toEqual([5, 4, 6, 3, 7, 2, 8]);
   });
+
+  it('finds the maximum value in the tree', () => {
+    const binarySearchTree = new BinarySearchTree();
+    binarySearchTree.add(5);
+    binarySearchTree.add(4);
+    binarySearchTree.add(6);
+    binarySearchTree.add(3);
+    binarySearchTree.add(2);
+    binarySearchTree.add(7);
+    binarySearchTree.add(8);
+    expect(binarySearchTree.findMaximumValue(binarySearchTree.root, 0)).toBe(8);
+  });
 });

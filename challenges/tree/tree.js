@@ -54,6 +54,21 @@ class BinaryTree {
     }
     return this.traversalArray;
   }
+  findMaximumValue(root) {
+    if(!this.traversalArray[0]) {
+      this.traversalArray.push(root.value);
+    }
+    if(root.value > this.traversalArray[0]) {
+      this.traversalArray[0] = root.value;
+    }
+    if(root.left !== null) {
+      this.findMaximumValue(root.left);
+    }
+    if(root.right !== null) {
+      this.findMaximumValue(root.right);
+    }
+    return this.traversalArray[0];
+  }
 }
 
 class BinarySearchTree extends BinaryTree {
