@@ -13,3 +13,4 @@
 [Tree](./challenge/fizzBuzzTree/fizz-buzz-tree.js)
 [Hashtable](./challenge/hashtable/hashtable.js)
 [RepeatedWord](./challenge/repeatedWord/repeated-word.js)
+[TreeIntersection](./challenge/treeIntersection/tree-intersection.js)

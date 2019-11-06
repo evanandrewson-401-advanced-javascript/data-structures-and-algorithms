@@ -1,5 +1,3 @@
-const { BinarySearchTree } = require('../tree/tree');
-
 const treeIntersection = (firstTree, secondTree) => {
   const firstTreeArray = firstTree.preOrder(firstTree.root);
   const secondTreeArray = secondTree.preOrder(secondTree.root);
