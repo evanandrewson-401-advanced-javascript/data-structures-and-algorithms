@@ -11,3 +11,6 @@
 [Animal Shelter](./challenge/fifoAnimalShelter/fifo-animal-shelter.js)
 [Multi Bracket Validation](./challenge/multiBracketValidation/multi-bracket-validation.js)
 [Tree](./challenge/fizzBuzzTree/fizz-buzz-tree.js)
+[Hashtable](./challenge/hashtable/hashtable.js)
+[RepeatedWord](./challenge/repeatedWord/repeated-word.js)
+[TreeIntersection](./challenge/treeIntersection/tree-intersection.js)
